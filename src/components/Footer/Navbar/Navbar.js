@@ -1,47 +1,20 @@
 import Link from "next/link";
-import React from "react";
-
+import styles from "./Navbar.module.css";
 const Navbar = () => {
-  const links = [
-    {
-      id: 1,
-      title: "Home",
-      url: "/",
-    },
-    {
-      id: 2,
-      title: "Portfolio",
-      url: "/portfolio",
-    },
-    {
-      id: 3,
-      title: "Blog",
-      url: "/blog",
-    },
-    {
-      id: 4,
-      title: "About",
-      url: "/about",
-    },
-    {
-      id: 1,
-      title: "Contact",
-      url: "/contact",
-    },
-    {
-      id: 1,
-      title: "Dashboard",
-      url: "/dashboard",
-    },
-  ];
+
   return (
-    <div>
-      <h3>This is navbar.</h3>
-      <Link href="/">Home</Link>
-      <Link href="/portfolio">Portfolio</Link>
-      <Link href="/blog">Blog</Link>
-      <Link href="/about">About</Link>
-      <Link href="/dashboard">Dashboard</Link>
+    <div className={styles.container}>
+      <div>
+        <h2>Omega</h2>
+      </div>
+      <div>
+        <Link className={styles.link} href="/">Home</Link>
+        <Link className={styles.link} href="/portfolio">Portfolio</Link>
+        <Link className={styles.link} href="/blog">Blog</Link>
+        <Link className={styles.link} href="/about">About</Link>
+        <Link className={styles.link} href="/dashboard">Dashboard</Link>
+        <span>Logout</span>
+      </div>
     </div>
   );
 };
