@@ -18,7 +18,23 @@
 }
 .contact_container_image {
   flex: 1;
+
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
+
+@keyframes example {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(0.8);
+  }
+}
+
 .contact_container form {
   flex: 1;
   display: flex;

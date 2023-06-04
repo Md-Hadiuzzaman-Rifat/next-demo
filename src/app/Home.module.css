@@ -14,7 +14,7 @@
 
   position: relative;
   animation-name: example;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
