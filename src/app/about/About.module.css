@@ -37,3 +37,15 @@
 .about_body h1 {
   margin-bottom: 2rem;
 }
+.container p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 786px) {
+  .about_body {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}

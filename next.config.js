@@ -2,7 +2,8 @@
 const nextConfig = {
     images:{
         domains:[
-            "www.deskera.com"
+            "www.deskera.com",
+            "png.pngtree.com"
         ]
     }
 }
