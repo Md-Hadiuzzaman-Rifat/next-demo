@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-self: start;
+}
+.about_cover {
+  position: relative;
+}
+.about_cover img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.about_cover_content {
+  position: absolute;
+  background-color: #53b82c;
+  color: white;
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
+  z-index: 100;
+  bottom: 2rem;
+  left: 0;
+}
+.about_cover_content p {
+  font-size: 18px;
+}
+.about_body {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.about_body h1 {
+  margin-bottom: 2rem;
+}
