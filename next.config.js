@@ -3,7 +3,9 @@ const nextConfig = {
     images:{
         domains:[
             "www.deskera.com",
-            "png.pngtree.com"
+            "png.pngtree.com",
+            "miro.medium.com",
+            "images.pexels.com"
         ]
     }
 }

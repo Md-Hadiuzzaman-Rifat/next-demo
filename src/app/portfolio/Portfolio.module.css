@@ -1,0 +1,51 @@
+.layout_heading {
+  font-size: 4rem;
+  color: #bbb;
+}
+.selectTitle {
+  margin: 20px 0px;
+  color: #53c28b;
+}
+
+.items {
+  display: flex;
+  gap: 3rem;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.item {
+  border: 5px solid #bbb;
+  border-radius: 5px;
+  width: 15rem;
+  height: 20rem;
+  position: relative;
+  background-size: cover !important;
+}
+
+.item:nth-child(1) {
+  background: url("/websites.jpg");
+}
+.item:nth-child(2) {
+  background: url("/illustration.jpg");
+}
+.item:nth-child(3) {
+  background: url("/apps.jpg");
+}
+
+.title {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 1.75rem;
+  font-weight: bold;
+  transition-delay: 0.05s;
+  transition-duration: 0.3s;
+  color: white;
+}
+
+.item:hover .title {
+  color: #53c28b;
+}
