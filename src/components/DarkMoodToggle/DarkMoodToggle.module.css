@@ -11,10 +11,11 @@
     position: relative;
 } 
 .icon{
-    width: 12px;
-    height: 12px;
-    background-color: blue;
-    border-radius: 50%;
+    /* width: 12px;
+    height: 12px; */
+    /* background-color: blue;
+    border-radius: 50%; */
+    font-size: 12px;
 }
 .ball{
     position: absolute;
