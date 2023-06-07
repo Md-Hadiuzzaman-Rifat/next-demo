@@ -1,0 +1,11 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footerImg img {
+    margin: 0 10px;
+    cursor: pointer;
+    opacity: 0.6;
+  }
