@@ -23,7 +23,7 @@ const page = async({params}) => {
                 </div>
                 
                 <div>
-                    <Image src={data.img} width={400} height={300}></Image>
+                    <Image src={data.img} alt={data.title} width={400} height={300}></Image>
                 </div>
             </div>
             <div className={styles.middleSection}
