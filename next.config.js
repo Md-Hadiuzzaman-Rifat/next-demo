@@ -5,7 +5,8 @@ const nextConfig = {
             "www.deskera.com",
             "png.pngtree.com",
             "miro.medium.com",
-            "images.pexels.com"
+            "images.pexels.com",
+            "gorzelinski.com"
         ]
     }
 }

@@ -1,0 +1,11 @@
+ .imgContainer{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+ }
+ .imgContainer img{
+    flex: 1;
+ }
+ .content{
+    flex: 2;
+ }
