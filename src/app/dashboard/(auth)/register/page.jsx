@@ -33,7 +33,6 @@ const Register = () => {
         }
       };
 
-
   return (
     <div>
       <h2>This is register Form.</h2>

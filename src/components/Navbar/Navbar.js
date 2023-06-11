@@ -1,12 +1,13 @@
+"use client"
 import Link from "next/link";
 import styles from "./Navbar.module.css";
 import DarkMoodToggle from "../DarkMoodToggle/DarkMoodToggle";
+import { signOut } from "next-auth/react";
 
 const Navbar = () => {
 
   return (
     <div className={styles.container}>
-
       <div>
         <Link href="/"><h2>Omega</h2></Link>
       </div>
@@ -18,7 +19,7 @@ const Navbar = () => {
         <Link className={styles.link} href="/about">About</Link>
         <Link className={styles.link} href="/contact">Contact</Link>
         <Link className={styles.link} href="/dashboard">Dashboard</Link>
-        <span>Logout</span>
+        <span onClick={signOut}>Logout</span>
       </div>
     </div>
   );
