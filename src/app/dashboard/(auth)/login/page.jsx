@@ -84,6 +84,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 
 const Login = ({ url }) => {
+  console.log(url);
   const session = useSession();
   const router = useRouter();
   const params = useSearchParams();
@@ -147,14 +148,7 @@ const Login = ({ url }) => {
       <Link className={styles.link} href="/dashboard/register">
         Create new account
       </Link>
-      {/* <button
-        onClick={() => {
-          signIn("github");
-        }}
-        className={styles.button + " " + styles.github}
-      >
-        Login with Github
-      </button> */}
+
     </div>
   );
 };
