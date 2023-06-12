@@ -13,7 +13,7 @@ const Register = () => {
         const name = e.target[0].value;
         const email = e.target[1].value;
         const password = e.target[2].value;
-    
+     
         try {
           const res = await fetch("/api/auth/register", {
             method: "POST",
@@ -34,13 +34,13 @@ const Register = () => {
       };
 
   return (
-    <div>
+    <div className={styles.container}>
       <h2>This is register Form.</h2>
-      <form className={styles} onSubmit={handleSubmit}>
-        <input type="text" placeholder="username" required/>
-        <input type="email" placeholder="email" required/>
-        <input type="password" placeholder="password" required/>
-        <button type="submit">Register</button>
+      <form className={styles.form} onSubmit={handleSubmit}>
+        <input className={styles.input} type="text" placeholder="username" required/>
+        <input className={styles.input} type="email" placeholder="email" required/>
+        <input className={styles.input} type="password" placeholder="password" required/>
+        <button className={styles.button} type="submit">Register</button>
       </form>
       <br />
       <Link href="/dashboard/login">Login</Link>
