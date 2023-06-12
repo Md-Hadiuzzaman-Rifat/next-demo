@@ -50,6 +50,7 @@
   border: 2px solid #bbb;
   margin-bottom: 1rem;
   border-radius: 5px;
+  color: #bbb
 }
 .contact_container form textarea {
   font-size: 18px;
@@ -60,6 +61,7 @@
   border: 2px solid #bbb;
   margin-bottom: 1rem;
   border-radius: 5px;
+  color:#bbb
 }
 .contact_container button {
   width: 8rem;
