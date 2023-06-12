@@ -13,18 +13,27 @@
     flex: 1;
 }
 .form{
-    flex:1
+    flex:1;
+    margin:2rem 0
 }
 .formPost{
     display: flex;
     flex-direction: column;
+}
+.formPost button{
+    background-color: #53b82c;
+    color: white;
+    /* font-size: 18px; */
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
 }
 .formPost input{
     font-size: 18px;
     padding: 10px;
     border: none;
     background-color: transparent;
-    outline: none;
+    outline: none; 
     border: 2px solid #bbb;
     margin-bottom: 1rem;
     border-radius: 5px;

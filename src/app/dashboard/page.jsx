@@ -11,7 +11,38 @@ const Dashboard = () => {
 
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
-  const { data, error, isLoading } = useSWR("/api/posts", fetcher);
+  const { data, error, isLoading } = useSWR(`/api/posts?username=${session?.data?.user.name}`, fetcher);
+
+  // console.log(session?.data?.user.name);
+  console.log(data);
+
+  const handleSubmit=async(e)=>{
+    e.preventDefault()
+
+    const title=e.target[0].value;
+    const desc=e.target[0].value;
+    const img=e.target[0].value;
+    const content=e.target[0].value;
+    const username=e.target[0].value 
+
+    try{
+      await fetch('/api/posts',{
+        method: "POST",
+        body:JSON.stringify({
+          title,
+          desc,
+          img,
+          content,
+          username
+        })
+      })
+      mutate()
+      e.target.reset()
+    }
+    catch(err){
+      console.log(err);
+    }
+  }
 
   if (session.status === "loading") {
     return <p>Loading...</p>;
@@ -41,12 +72,13 @@ const Dashboard = () => {
                 </div>
               ))}
           </div>
-          <form className={styles.form}>
+          <form onSubmit={handleSubmit} className={styles.form}>
             <div className={styles.formPost}>
                 <input type="text" placeholder="Title"/>
                 <input type="text" placeholder="Description"/>
                 <input type="text" placeholder="Image"/>
                 <textarea placeholder="Content" id="" cols="30" rows="5"></textarea>
+                <button type="submit">Add Blog</button>
             </div>
           </form>
         </div>
