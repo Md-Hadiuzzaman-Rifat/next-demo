@@ -71,6 +71,7 @@
   border: none;
   font-size: 18px;
   color: white;
+  cursor: pointer;
 }
 @media screen and (max-width: 786px) {
   .contact_container {
