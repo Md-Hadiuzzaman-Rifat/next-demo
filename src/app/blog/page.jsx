@@ -4,11 +4,10 @@ import styles from "./page.module.css";
 import Image from "next/image";
 
 async function getData() {
-
   const res = await fetch("http://localhost:3000/api/posts", {
-    cache: "no-store",
+    next: { revalidate: 10 },
   });
- 
+
   if (!res.ok) {
     throw new Error("Failed to fetch data.");
   }
@@ -19,7 +18,7 @@ const Blog = async () => {
   console.log(data);
   return (
     <div className={styles.container}>
-      {data.map((item) => 
+      {data.map((item) => (
         <Link key={item.key} href={`/blog/${item._id}`}>
           <div className={styles.imgContainer}>
             <Image
@@ -36,7 +35,7 @@ const Blog = async () => {
             </div>
           </div>
         </Link>
-      )}
+      ))}
     </div>
   );
 };
