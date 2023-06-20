@@ -1,0 +1,13 @@
+.content{
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+}
+.content h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.content span{
+    font-size: 2.5rem;
+    font-weight: 200;
+}

@@ -3,13 +3,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .link {
   margin: 0 10px;
 }
 
-.link + span {
-  background-color: #53b82c;
+.link + span { 
+  background-color: #53b82c; 
   padding: 5px 10px;
   color: white;
   border-radius: 5px;
@@ -19,4 +20,43 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.icon{
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: 2rem; 
+}
+.container_links_toggle{
+  display: block;
+}
+/* toggle small device  */
+
+.toggleNavigation{
+  position: absolute;
+  top: 90px;
+  background-color: #54b82ca1;
+  border-radius: 10px;
+  z-index: 100;
+}
+.toggleNavigationItem{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0.75rem;
+  color: black;
+}
+.toggleNavigationItem :hover{
+  color: white;
+  transition: 0.1s;
+  scale: 1.2;
+}
+@media only screen and (max-width: 786px) {
+  .icon{
+    display: block;
+
+  }
+  .container_links_toggle{
+    display: none;
+  }
 }

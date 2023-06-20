@@ -6,7 +6,7 @@ const ProjectSchema=new Schema({
         type:String,
         required:true
     },
-    description:{
+    desc:{
         type:String,
         required:true,
     },
@@ -14,7 +14,7 @@ const ProjectSchema=new Schema({
         type:String,
         required: true
     },
-    technology:{
+    tech:{
         type:[String]
     }
 })

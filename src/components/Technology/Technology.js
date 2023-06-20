@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./Technology.module.css";
 import Image from "next/image";
-
+ 
 const Technology = () => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <h1>My Skills</h1>
+        <h1><span>My </span> Skills</h1>
         <p>All Libraries and Framework which I am proficient at:</p>
       </div>
       <div className={styles.technology}>
