@@ -16,7 +16,7 @@ const CoverSection = () => {
       typed.destroy();
     };
   }, []);
-
+ 
   return (
     <div className={styles.cover}>
       <div className={styles.content}>

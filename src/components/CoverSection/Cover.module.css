@@ -25,3 +25,13 @@
     margin: 1rem 0;
     font-size: 2rem;
 }
+@media only screen and (max-width: 600px) {
+    .cover span{
+        font-size: 1.75rem;
+        font-weight: bold;
+    } 
+    .cover p{
+        margin: 1.5rem 0;
+        font-size: 1rem;
+    }
+}
