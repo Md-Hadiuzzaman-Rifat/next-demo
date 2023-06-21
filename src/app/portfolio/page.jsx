@@ -16,7 +16,7 @@ const Portfolio = () => {
           <span className={styles.title}>Application</span>
         </Link>
       </div>
-    </div>
+    </div> 
   );
 };
 

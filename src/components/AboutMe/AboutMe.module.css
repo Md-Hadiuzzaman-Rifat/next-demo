@@ -37,11 +37,13 @@
 }
 .content_image{
     flex: 1;
+
 }
 .image{
     height: 500px;
     -webkit-filter: grayscale(80%);
     filter: grayscale(100%);
+    border-radius: 5px;
 }
 
 .content_description button{

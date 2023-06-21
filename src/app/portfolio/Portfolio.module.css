@@ -24,7 +24,7 @@
   position: relative;
   background-size: cover !important;
 }
-
+ 
 .item:nth-child(1) {
   background: url("/websites.jpg");
 }
