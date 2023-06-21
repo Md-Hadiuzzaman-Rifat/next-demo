@@ -10,7 +10,7 @@
     gap: 2rem;
     align-items: start;
     /* align-items: center; */
-}
+} 
 .content{
     flex: 1;
 }
@@ -82,7 +82,7 @@
 @media only screen and (max-width: 786px) {
     .container{
         display: flex;
-        /* flex-direction: column-reverse; */
+        flex-direction: column-reverse;
         align-items: center;
         gap: 2rem;
     }

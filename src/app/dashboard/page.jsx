@@ -12,7 +12,7 @@ const Dashboard = () => {
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
   const { data, mutate, error, isLoading } = useSWR(`/api/posts?username=${session?.data?.user.name}`, fetcher);
-
+ 
   // console.log(session?.data?.user.name);
   const username=session?.data?.user.name
   console.log(data);
@@ -68,8 +68,7 @@ const Dashboard = () => {
   if (session.status === "authenticated") {
     return (
       <div className={styles.dashboard}>
-        <h1 className={styles.heading}>Dashboard</h1>
-        <h3>Your blog is listed here.</h3>
+ 
         <div className={styles.container}>
           <div className={styles.content}>
             {!isLoading &&
