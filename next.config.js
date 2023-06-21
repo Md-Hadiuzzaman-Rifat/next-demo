@@ -10,6 +10,7 @@ const nextConfig = {
             "blog.logrocket.com",
             "www.creative-tim.com",
             "img.freepik.com",
+            "i.ibb.co"
         ]
     }
 }

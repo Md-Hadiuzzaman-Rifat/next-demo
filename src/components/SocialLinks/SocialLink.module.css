@@ -1,0 +1,55 @@
+.container{
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+.container span{
+    color: #53B82c;
+}
+.content{
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+}
+.content h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.content span{
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+.socialLinks{
+    margin: 2rem 0;
+    font-size: 4.5rem;
+    min-height: 15rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.circle{
+    cursor: pointer;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(146, 146, 146, 0.253);
+    color:#53B82c
+
+}
+.icon{
+    font-size: 4rem;
+    padding: 1rem;
+}
+.circle:hover{
+    background: #53B82c;
+    color: black;
+}

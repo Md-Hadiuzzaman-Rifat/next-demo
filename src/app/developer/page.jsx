@@ -4,13 +4,18 @@ import Technology from '@/components/Technology/Technology';
 import Testimonial from '@/components/Testomonial/Testimonial';
 import React from 'react';
 import styles from "./Developer.module.css"
+import SocialLinks from '@/components/SocialLinks/SocialLinks';
+import AboutMe from '@/components/AboutMe/AboutMe';
+
 const page = () => {
     return (
         <div className={styles.developer}>
             <CoverSection/>
             <FeaturedPortfolio></FeaturedPortfolio>
+            <AboutMe></AboutMe>
             <Technology></Technology>
             <Testimonial></Testimonial>
+            <SocialLinks></SocialLinks>
         </div>
     );
 };
