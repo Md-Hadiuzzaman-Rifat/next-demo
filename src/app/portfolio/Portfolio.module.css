@@ -4,7 +4,7 @@
 }
 .selectTitle {
   margin: 20px 0px;
-  color: #53c28b;
+  color: #53b82c;
 }
 
 .items {
@@ -47,5 +47,5 @@
 }
 
 .item:hover .title {
-  color: #53c28b;
+  color: #53b82c;
 }

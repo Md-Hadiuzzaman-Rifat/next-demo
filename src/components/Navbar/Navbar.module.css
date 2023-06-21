@@ -26,9 +26,14 @@
   font-size: 2rem;
   cursor: pointer;
   margin-left: 2rem; 
+  margin-top: 8px;
 }
 .container_links_toggle{
   display: block;
+}
+.container_links span{
+  margin-left: 1rem;
+  cursor: pointer;
 }
 /* toggle small device  */
 
@@ -54,7 +59,6 @@
 @media only screen and (max-width: 786px) {
   .icon{
     display: block;
-
   }
   .container_links_toggle{
     display: none;
