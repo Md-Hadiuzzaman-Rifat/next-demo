@@ -5,7 +5,10 @@ import { useRouter } from "next/navigation";
 import useSWR from "swr";
 import styles from "./dashboard.module.css";
 import Image from "next/image";
+import {useState} from "react"
+
 const Dashboard = () => {
+  const [err,setErr]=useState("")
   const session = useSession();
   const router = useRouter();
 
@@ -17,7 +20,6 @@ const Dashboard = () => {
   const username=session?.data?.user.name
   console.log(data);
 
-
   const handleSubmit=async(e)=>{
     e.preventDefault()
 
@@ -25,6 +27,11 @@ const Dashboard = () => {
     const desc=e.target[1].value;
     const img=e.target[2].value;
     const content=e.target[3].value;
+
+    if(!img.includes("img.freepik" || "images.pexels")){
+      setErr("Image must be upload from freepik or pexel domain")
+      return 
+    } 
 
     try{
       await fetch('/api/posts',{
@@ -55,7 +62,6 @@ const Dashboard = () => {
       console.log(err);
     }
   };
-
 
   if (session.status === "loading") {
     return <p>Loading...</p>;
@@ -94,6 +100,7 @@ const Dashboard = () => {
                 <input type="text" placeholder="Image must be take from 'freepik.com' or 'pexels.com'"/>
                 <textarea placeholder="Content" id="" cols="30" rows="5"></textarea>
                 <button type="submit">Add Blog</button>
+                {err &&  <p style={{color:"red"}}>{err}</p> }
             </div>
           </form>
         </div>
