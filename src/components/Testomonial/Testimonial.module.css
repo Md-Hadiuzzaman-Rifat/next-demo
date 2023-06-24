@@ -3,17 +3,57 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 .content h1{
     font-size: 2.5rem;
     font-weight: bold;
+    margin-bottom: 5rem;
+
 }
 .content span{
     font-size: 2.5rem;
     font-weight: 200;
+    color: #53b82c;
+
 }
 .slider div{
     display: flex;
     flex-direction: row;
     border: 2px solid rgb(255, 24, 24);
+} 
+.client{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+.client_review{
+    padding: 1rem 2.5rem;
+    width: 400px;
+    border: 1px solid #53b82c;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.client_review img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.reviewName{
+    color: #53b82c;
+}
+.client_flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
 }

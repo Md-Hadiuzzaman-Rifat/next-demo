@@ -26,7 +26,7 @@ const Technology = () => {
             <Image width={320} height={180} src='/library/jwt.png' alt="" />
         </div>
         <div>
-            <Image width={320} height={180} src='/library/redux.png' alt="" />
+            <Image width={320} height={180} src='/library/next.png' alt="" />
         </div>
       </div>
     </div>

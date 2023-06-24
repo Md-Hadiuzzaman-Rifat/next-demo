@@ -5,7 +5,7 @@
         desc: "",
         img:"https://i.ibb.co/whC7Cv2/omega.png",
         tech:["React", "Sass", "Framer Motion"],
-        live:"stately-cocada-fa06b0.netlify.app/",
+        live:"https://stately-cocada-fa06b0.netlify.app/",
         github:"https://github.com/Md-Hadiuzzaman-Rifat/smartapp"
     },
     {

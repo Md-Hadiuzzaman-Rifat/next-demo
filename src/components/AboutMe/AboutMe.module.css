@@ -25,6 +25,8 @@
     flex-wrap: wrap;
 }
 .content_description{
+    display: flex;
+    flex-wrap: wrap;
     flex: 1;
 }
 .content_description p{
@@ -56,11 +58,16 @@
     border-radius: 5px;
     color: #eee;
 }
-
-@media screen and(max-width:786px){
+.content_description span{
+    color: #53b82c;
+} 
+ 
+@media only screen and (max-width: 800px) {
     .content{
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
     }
 }

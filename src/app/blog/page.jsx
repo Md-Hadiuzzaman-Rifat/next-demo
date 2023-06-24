@@ -7,7 +7,7 @@ async function getData() {
 
   const res = await fetch("https://next-demo-two-gules.vercel.app/api/posts", {
   // const res = await fetch("http://localhost:3000/api/posts", {
-    cache: "no-store",
+    next: { revalidate: 10 } 
   });
  
   if (!res.ok) {

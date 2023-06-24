@@ -3,7 +3,7 @@ import styles from "./AboutMe.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-const AboutMe = () => {
+const AboutMe = () => { 
   return (
     <div className={styles.container}>
       <div className={styles.text}>
@@ -23,8 +23,8 @@ const AboutMe = () => {
         <div className={styles.content_description}>
           <h1>Full Stack Web Developer</h1>
           <p>
-            I am a &ldquo;Full Stack Web Developer&ldquo;. My Specialized area
-            is MERN Stack. I also use NextJs Framework. This project is made
+            I am a &ldquo; <span>Full Stack Web Developer</span> &ldquo;. My Specialized area
+            is <span>MERN</span> Stack. I also use <span>NextJs</span> Framework. This project is made
             with NextJs . If you need any information please follow my social
             links bellow. Or if you interested to work with me, feel free to
             contact me. I can make SEO friendly and dynamic website according to
