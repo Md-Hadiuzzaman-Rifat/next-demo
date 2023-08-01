@@ -5,9 +5,9 @@ import Image from "next/image";
 
 async function getData() {
 
-  const res = await fetch("https://next-demo-two-gules.vercel.app/api/posts", {
+  const res = await fetch("https://next-demo-dr8o.vercel.app/api/posts", {
   // const res = await fetch("http://localhost:3000/api/posts", {
-    next: { revalidate: 10 }
+     cache: 'no-store' 
   });
  
   if (!res.ok) {
