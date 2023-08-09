@@ -13,8 +13,8 @@ const FeaturedPortfolio = () => {
         <h4>Project</h4>
       </div>
       <div className={styles.portfolio}>
-        {dataProjects.map((project) => (
-          <div className={styles.imageGrid} key={project.id}>
+        {dataProjects.map((project,id) => (
+          <div className={styles.imageGrid} key={id}>
             <Link href={project.live} target="_blank">
               <Image
                 className={styles.image}

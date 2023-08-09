@@ -1,6 +1,42 @@
  const dataProjects=[
     {
         id:1,
+        title: "Vlog Post",
+        desc: "",
+        img:"https://i.ibb.co/D4hdmgh/image.png",
+        tech:["NextJs", "Mongoose", "Mongodb", "TailwindCss", "Sass", "React Scroll Parallax", "Framer Motion", "bcryptjs" ],
+        live:"https://vlog-post-md-hadiuzzaman-rifat.vercel.app/",
+        github:"https://github.com/Md-Hadiuzzaman-Rifat/vlog-post"
+    },
+    {
+        id:2,
+        title: "Johns Garments",
+        desc: "",
+        img:"https://i.ibb.co/WNJX1QX/image.png",
+        tech:["NextJs", "TailwindCss", "Framer Motion","ChartJs","Sass" ,"Leaflet"],
+        live:"https://jhons-garments.vercel.app/",
+        github:"https://github.com/Md-Hadiuzzaman-Rifat/jhons-garments"
+    },
+    // {
+    //     id:1,
+    //     title: "Omega Portfolio",
+    //     desc: "",
+    //     img:"https://i.ibb.co/whC7Cv2/omega.png",
+    //     tech:["React", "Sass", "Framer Motion"],
+    //     live:"https://stately-cocada-fa06b0.netlify.app/",
+    //     github:"https://github.com/Md-Hadiuzzaman-Rifat/smartapp"
+    // },
+    // {
+    //     id:1,
+    //     title: "Omega Portfolio",
+    //     desc: "",
+    //     img:"https://i.ibb.co/whC7Cv2/omega.png",
+    //     tech:["React", "Sass", "Framer Motion"],
+    //     live:"https://stately-cocada-fa06b0.netlify.app/",
+    //     github:"https://github.com/Md-Hadiuzzaman-Rifat/smartapp"
+    // },
+    {
+        id:5,
         title: "Omega Portfolio",
         desc: "",
         img:"https://i.ibb.co/whC7Cv2/omega.png",
@@ -8,17 +44,9 @@
         live:"https://stately-cocada-fa06b0.netlify.app/",
         github:"https://github.com/Md-Hadiuzzaman-Rifat/smartapp"
     },
+
     {
-        id:2,
-        title: "Ortho Dental",
-        desc: "",
-        img:"https://i.ibb.co/myr9NqZ/md-hadiuzzamanrifat-rifat-doctor.png",
-        tech:["React", "Node", "Express", "MongoDB","JWT Authentication", "Material UI", "Firebase Authentication", "Stripe Payment"],
-        live:"https://practice-ec6ac.web.app/",
-        github:"https://github.com/Md-Hadiuzzaman-Rifat/israt_dental_frontend"
-    },
-    {
-        id:3,
+        id:6,
         title: "DashisABoard",
         desc: "",
         img:"https://i.ibb.co/njYKZDW/md-hadiuzzaman-rifat-dashboard.png",
@@ -27,7 +55,7 @@
         github:"https://github.com/Md-Hadiuzzaman-Rifat/dashisABoard"
     },
     {
-        id:4,
+        id:7,
         title: "GPT-3",
         desc: "",
         img:"https://i.ibb.co/LdR3QnN/GPT3.png",
@@ -36,7 +64,7 @@
         github:"https://github.com/Md-Hadiuzzaman-Rifat/gpt-3"
     },
     {
-        id:5,
+        id:8,
         title: "Next Demo",
         desc: "",
         img:"https://i.ibb.co/rF9YFpQ/next-Md-Hadiuzzaman-Rifat.png",
@@ -45,16 +73,16 @@
         github:"https://github.com/Md-Hadiuzzaman-Rifat/next-demo"
     },
     {
-        id:6,
-        title: "Honda CVR",
+        id:9,
+        title: "Ortho Dental",
         desc: "",
-        img:"https://i.ibb.co/gydtRHZ/honda.png",
-        tech:["Html", "Css", "Bootstrap"],
-        live:"https://confident-benz-00611e.netlify.app/",
-        github:"https://github.com/Md-Hadiuzzaman-Rifat/honda-cbr"
+        img:"https://i.ibb.co/myr9NqZ/md-hadiuzzamanrifat-rifat-doctor.png",
+        tech:["React", "Node", "Express", "MongoDB","JWT Authentication", "Material UI", "Firebase Authentication", "Stripe Payment"],
+        live:"https://practice-ec6ac.web.app/",
+        github:"https://github.com/Md-Hadiuzzaman-Rifat/israt_dental_frontend"
     },
     {
-        id:7,
+        id:10,
         title: "Copa America",
         desc: "",
         img:"https://i.ibb.co/7RS0Vdh/fifa.jpg",
@@ -63,7 +91,7 @@
         github:""
     },
     {
-        id:8,
+        id:11,
         title: "Mac Book",
         desc: "",
         img:"https://i.ibb.co/N3NHD46/pc-calculator.png",
