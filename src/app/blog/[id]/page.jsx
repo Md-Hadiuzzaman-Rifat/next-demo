@@ -2,14 +2,22 @@ import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
 
+
 async function getData(id) {
   const res = await fetch(`https://next-demo-dr8o.vercel.app/api/posts/${id}`);
-  // const res = await fetch(`http://localhost:3000/api/posts/${id}`);
   if (!res.ok) {
     throw new Error("Failed to fetch data.");
   }
   return res.json();
 }
+
+export async function generateMetadata({params}){
+  const post =await getData(params.id)
+  return{
+    title: post.title,
+    description: post.desc
+  }
+};
 
 const page = async ({ params }) => {
   const data = await getData(params.id);
