@@ -15,7 +15,7 @@ const page = () => {
             <FeaturedPortfolio></FeaturedPortfolio>
             <AboutMe></AboutMe>
             <Technology></Technology>
-            <GitHubDate></GitHubDate>
+            {/* <GitHubDate></GitHubDate> */}
             <Testimonial></Testimonial>
             <SocialLinks></SocialLinks>
         </div>
