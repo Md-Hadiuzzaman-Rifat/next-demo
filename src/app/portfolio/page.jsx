@@ -20,17 +20,4 @@ const Portfolio = () => {
   );
 };
 
-// export default Portfolio;
-
-// import FeaturedPortfolio from '@/components/FeaturedPortfolio/FeaturedPortfolio';
-// import React from 'react';
-
-// const Portfolio = () => {
-//   return (
-//     <div>
-//       <Developer></Developer>
-//     </div>
-//   );
-// };
-
-// export default Portfolio;
+export default Portfolio;
