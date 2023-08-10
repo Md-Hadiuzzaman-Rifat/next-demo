@@ -23,7 +23,7 @@ const Technology = () => {
             <Image width={320} height={180} src='/library/firbase.png' alt="" />
         </div>
         <div>
-            <Image width={320} height={180} src='/library/jwt.png' alt="" />
+            <Image width={320} height={180} src='/library/express.jpg' alt="" />
         </div>
         <div>
             <Image width={320} height={180} src='/library/next.png' alt="" />

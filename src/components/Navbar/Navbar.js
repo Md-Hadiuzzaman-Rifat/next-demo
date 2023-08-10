@@ -36,7 +36,7 @@ const Navbar = () => {
               <Link onClick={handleToggle} className={styles.link} href="/">
                 Home
               </Link>
-              <Link onClick={handleToggle} className={styles.link} href="/portfolio">
+              <Link onClick={handleToggle} className={styles.link} href="/developer">
                 Portfolio
               </Link>
               <Link onClick={handleToggle} className={styles.link} href="/blog">
@@ -60,7 +60,7 @@ const Navbar = () => {
           <Link className={styles.link} href="/">
             Home
           </Link>
-          <Link className={styles.link} href="/portfolio">
+          <Link className={styles.link} href="/developer">
             Portfolio
           </Link>
           <Link className={styles.link} href="/blog">

@@ -23,13 +23,15 @@
     width: 23rem;
     border-radius: 10px;
     box-shadow: rgba(50, 93, 68, 0.315) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    object-fit: cover;
 }
 .image:hover{
-    scale: 1.15;
+    scale: 1.12;
     transition-duration: 0.3s;
     transition-delay: 0.1s;
     transition-timing-function: ease-in-out;
     cursor: pointer;
+    overflow: hidden;
 }
 .portfolio{
     display: flex;

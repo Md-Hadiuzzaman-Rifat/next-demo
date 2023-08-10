@@ -6,6 +6,7 @@ import React from 'react';
 import styles from "./Developer.module.css"
 import SocialLinks from '@/components/SocialLinks/SocialLinks';
 import AboutMe from '@/components/AboutMe/AboutMe';
+import GitHubDate from '@/components/GitHubDate/GitHubDate';
 
 const page = () => {
     return (
@@ -14,6 +15,7 @@ const page = () => {
             <FeaturedPortfolio></FeaturedPortfolio>
             <AboutMe></AboutMe>
             <Technology></Technology>
+            <GitHubDate></GitHubDate>
             <Testimonial></Testimonial>
             <SocialLinks></SocialLinks>
         </div>

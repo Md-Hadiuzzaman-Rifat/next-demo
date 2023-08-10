@@ -1,0 +1,22 @@
+.GitHubDate{
+    margin-top: 50px;
+    height: 100vh;
+    min-width: 300px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.GitHubDate h1{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.GitHubDate p{
+    font-size: 1.25rem;
+    color: #53b82c;
+    margin-bottom: 50px;
+}
+.GitHubDate span{
+    color: #53b82c;
+    font-weight: 200;
+}
